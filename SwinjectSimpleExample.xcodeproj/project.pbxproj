@@ -17,7 +17,6 @@
 		98BA27391B785EB00047549E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BA27371B785EB00047549E /* Main.storyboard */; };
 		98BA273B1B785EB00047549E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98BA273A1B785EB00047549E /* Assets.xcassets */; };
 		98BA273E1B785EB00047549E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BA273C1B785EB00047549E /* LaunchScreen.storyboard */; };
-		98BA27491B785EB00047549E /* SwinjectSimpleExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BA27481B785EB00047549E /* SwinjectSimpleExampleTests.swift */; };
 		B97E303F9E4F93462892FD8E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC9D028BA563C5ADB6DE2EE /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -45,7 +44,6 @@
 		98BA273D1B785EB00047549E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98BA273F1B785EB00047549E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98BA27441B785EB00047549E /* SwinjectSimpleExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectSimpleExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		98BA27481B785EB00047549E /* SwinjectSimpleExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectSimpleExampleTests.swift; sourceTree = "<group>"; };
 		98BA274A1B785EB00047549E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AC9D028BA563C5ADB6DE2EE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C431CBFC291F22B03349D1 /* Pods-SwinjectSimpleExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwinjectSimpleExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwinjectSimpleExampleTests/Pods-SwinjectSimpleExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				9878A1E91B7874610005ACD9 /* Model */,
-				98BA27481B785EB00047549E /* SwinjectSimpleExampleTests.swift */,
 				98BA274A1B785EB00047549E /* Info.plist */,
 			);
 			path = SwinjectSimpleExampleTests;
@@ -367,7 +364,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98BA27491B785EB00047549E /* SwinjectSimpleExampleTests.swift in Sources */,
 				9878A1EB1B78746C0005ACD9 /* WeatherFetcherSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
