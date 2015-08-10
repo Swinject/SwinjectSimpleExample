@@ -14,8 +14,8 @@
 		9878A1ED1B7876A70005ACD9 /* OpenWeatherMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878A1EC1B7876A70005ACD9 /* OpenWeatherMap.swift */; };
 		9878A1EF1B78930E0005ACD9 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878A1EE1B78930E0005ACD9 /* Networking.swift */; };
 		9878A1F11B7893210005ACD9 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878A1F01B7893210005ACD9 /* Network.swift */; };
+		9878A1F31B78B9610005ACD9 /* WeatherTablerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878A1F21B78B9610005ACD9 /* WeatherTablerViewController.swift */; };
 		98BA27341B785EB00047549E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BA27331B785EB00047549E /* AppDelegate.swift */; };
-		98BA27361B785EB00047549E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BA27351B785EB00047549E /* ViewController.swift */; };
 		98BA27391B785EB00047549E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BA27371B785EB00047549E /* Main.storyboard */; };
 		98BA273B1B785EB00047549E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98BA273A1B785EB00047549E /* Assets.xcassets */; };
 		98BA273E1B785EB00047549E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BA273C1B785EB00047549E /* LaunchScreen.storyboard */; };
@@ -40,9 +40,9 @@
 		9878A1EC1B7876A70005ACD9 /* OpenWeatherMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherMap.swift; sourceTree = "<group>"; };
 		9878A1EE1B78930E0005ACD9 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		9878A1F01B7893210005ACD9 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		9878A1F21B78B9610005ACD9 /* WeatherTablerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTablerViewController.swift; sourceTree = "<group>"; };
 		98BA27301B785EB00047549E /* SwinjectSimpleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwinjectSimpleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98BA27331B785EB00047549E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98BA27351B785EB00047549E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98BA27381B785EB00047549E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98BA273A1B785EB00047549E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98BA273D1B785EB00047549E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 			children = (
 				9878A1E41B7874420005ACD9 /* Model */,
 				98BA27331B785EB00047549E /* AppDelegate.swift */,
-				98BA27351B785EB00047549E /* ViewController.swift */,
+				9878A1F21B78B9610005ACD9 /* WeatherTablerViewController.swift */,
 				98BA27371B785EB00047549E /* Main.storyboard */,
 				98BA273A1B785EB00047549E /* Assets.xcassets */,
 				98BA273C1B785EB00047549E /* LaunchScreen.storyboard */,
@@ -359,9 +359,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9878A1ED1B7876A70005ACD9 /* OpenWeatherMap.swift in Sources */,
-				98BA27361B785EB00047549E /* ViewController.swift in Sources */,
 				9878A1E81B78745C0005ACD9 /* WeatherFetcher.swift in Sources */,
 				9878A1EF1B78930E0005ACD9 /* Networking.swift in Sources */,
+				9878A1F31B78B9610005ACD9 /* WeatherTablerViewController.swift in Sources */,
 				9878A1E71B78745C0005ACD9 /* City.swift in Sources */,
 				9878A1F11B7893210005ACD9 /* Network.swift in Sources */,
 				98BA27341B785EB00047549E /* AppDelegate.swift in Sources */,
