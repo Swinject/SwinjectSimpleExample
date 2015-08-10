@@ -4,6 +4,7 @@ use_frameworks!
 
 pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :commit => '1b7b1f1aa'
 pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git', :commit => '45ca854ce'
+pod 'Swinject', '~> 0.2'
 
 
 def testing_pods
