@@ -11,15 +11,16 @@ import Alamofire
 import SwiftyJSON
 
 struct WeatherFetcher {
-    static func fetch(response: [City]? -> ()) {
-        Alamofire.request(.GET, OpenWeatherMap.url, parameters: OpenWeatherMap.parameters)
-            .response { _, _, data, error in
-                let cities = data.flatMap { decode($0) }
-                response(cities)
-            }
+    let networking: Networking
+    
+    func fetch(response: [City]? -> ()) {
+        networking.request { data in
+            let cities = data.flatMap { self.decode($0) }
+            response(cities)
+        }
     }
     
-    private static func decode(data: NSData) -> [City]? {
+    private func decode(data: NSData) -> [City]? {
         let json = JSON(data: data)
         var cities = [City]()
         for (_, j) in json["list"] {

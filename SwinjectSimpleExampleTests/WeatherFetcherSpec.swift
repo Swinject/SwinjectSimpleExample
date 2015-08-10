@@ -15,7 +15,8 @@ class WeatherFetcherSpec: QuickSpec {
     override func spec() {
         it("returns cities.") {
             var cities: [City]?
-            WeatherFetcher.fetch { cities = $0 }
+            let fetcher = WeatherFetcher(networking: Network())
+            fetcher.fetch { cities = $0 }
             
             expect(cities).toEventuallyNot(beNil())
             expect(cities?.count).toEventually(equal(12))
