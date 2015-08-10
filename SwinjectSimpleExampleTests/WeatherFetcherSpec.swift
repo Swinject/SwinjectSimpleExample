@@ -45,14 +45,17 @@ class WeatherFetcherSpec: QuickSpec {
     }
     
     override func spec() {
-        let container = Container()
-        container.register(Networking.self) { _ in Network() }
-        container.register(WeatherFetcher.self) { r in
-            WeatherFetcher(networking: r.resolve(Networking.self)!)
-        }
-        container.register(Networking.self, name: "stub") { _ in StubNetwork() }
-        container.register(WeatherFetcher.self, name: "stub") { r in
-            WeatherFetcher(networking: r.resolve(Networking.self, name: "stub")!)
+        var container: Container!
+        beforeEach {
+            container = Container()
+            container.register(Networking.self) { _ in Network() }
+            container.register(WeatherFetcher.self) { r in
+                WeatherFetcher(networking: r.resolve(Networking.self)!)
+            }
+            container.register(Networking.self, name: "stub") { _ in StubNetwork() }
+            container.register(WeatherFetcher.self, name: "stub") { r in
+                WeatherFetcher(networking: r.resolve(Networking.self, name: "stub")!)
+            }
         }
         
         it("returns cities.") {
