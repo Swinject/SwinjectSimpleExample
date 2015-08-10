@@ -3,12 +3,14 @@ PODS:
   - Nimble (2.0.0-rc.2)
   - Quick (0.5.1)
   - SwiftyJSON (2.2.1)
+  - Swinject (0.2)
 
 DEPENDENCIES:
   - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, commit `1b7b1f1aa`)
   - Nimble (= 2.0.0-rc.2)
   - Quick (~> 0.5.0)
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`, commit `45ca854ce`)
+  - Swinject (~> 0.2)
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -31,5 +33,6 @@ SPEC CHECKSUMS:
   Nimble: e3cf5e73a491daf21c2bc88783dbfc55ce8b8e02
   Quick: 7426537a99e75076d6930c5b6da58006e4a9f38a
   SwiftyJSON: ae2d0a3d68025d136602a33c4ee215091ced3e33
+  Swinject: 08c22f85e8f073257befa6847485e348c8f13825
 
 COCOAPODS: 0.38.2
