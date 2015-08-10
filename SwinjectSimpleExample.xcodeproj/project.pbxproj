@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8D23A09513581907853700C6 /* Pods_SwinjectSimpleExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A29B4448E7E0D4B438261D /* Pods_SwinjectSimpleExampleTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9878A1E71B78745C0005ACD9 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878A1E51B78745C0005ACD9 /* City.swift */; };
+		9878A1E81B78745C0005ACD9 /* WeatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878A1E61B78745C0005ACD9 /* WeatherFetcher.swift */; };
+		9878A1EB1B78746C0005ACD9 /* WeatherFetcherSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878A1EA1B78746C0005ACD9 /* WeatherFetcherSpec.swift */; };
+		9878A1ED1B7876A70005ACD9 /* OpenWeatherMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878A1EC1B7876A70005ACD9 /* OpenWeatherMap.swift */; };
 		98BA27341B785EB00047549E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BA27331B785EB00047549E /* AppDelegate.swift */; };
 		98BA27361B785EB00047549E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BA27351B785EB00047549E /* ViewController.swift */; };
 		98BA27391B785EB00047549E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BA27371B785EB00047549E /* Main.storyboard */; };
@@ -29,6 +33,10 @@
 
 /* Begin PBXFileReference section */
 		94B7082C6BE00078D95CAB7A /* Pods-SwinjectSimpleExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwinjectSimpleExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwinjectSimpleExampleTests/Pods-SwinjectSimpleExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9878A1E51B78745C0005ACD9 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		9878A1E61B78745C0005ACD9 /* WeatherFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherFetcher.swift; sourceTree = "<group>"; };
+		9878A1EA1B78746C0005ACD9 /* WeatherFetcherSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherFetcherSpec.swift; sourceTree = "<group>"; };
+		9878A1EC1B7876A70005ACD9 /* OpenWeatherMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherMap.swift; sourceTree = "<group>"; };
 		98BA27301B785EB00047549E /* SwinjectSimpleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwinjectSimpleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98BA27331B785EB00047549E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98BA27351B785EB00047549E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +85,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9878A1E41B7874420005ACD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9878A1E51B78745C0005ACD9 /* City.swift */,
+				9878A1E61B78745C0005ACD9 /* WeatherFetcher.swift */,
+				9878A1EC1B7876A70005ACD9 /* OpenWeatherMap.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9878A1E91B7874610005ACD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9878A1EA1B78746C0005ACD9 /* WeatherFetcherSpec.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		98BA27271B785EB00047549E = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +126,7 @@
 		98BA27321B785EB00047549E /* SwinjectSimpleExample */ = {
 			isa = PBXGroup;
 			children = (
+				9878A1E41B7874420005ACD9 /* Model */,
 				98BA27331B785EB00047549E /* AppDelegate.swift */,
 				98BA27351B785EB00047549E /* ViewController.swift */,
 				98BA27371B785EB00047549E /* Main.storyboard */,
@@ -113,6 +140,7 @@
 		98BA27471B785EB00047549E /* SwinjectSimpleExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				9878A1E91B7874610005ACD9 /* Model */,
 				98BA27481B785EB00047549E /* SwinjectSimpleExampleTests.swift */,
 				98BA274A1B785EB00047549E /* Info.plist */,
 			);
@@ -327,7 +355,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9878A1ED1B7876A70005ACD9 /* OpenWeatherMap.swift in Sources */,
 				98BA27361B785EB00047549E /* ViewController.swift in Sources */,
+				9878A1E81B78745C0005ACD9 /* WeatherFetcher.swift in Sources */,
+				9878A1E71B78745C0005ACD9 /* City.swift in Sources */,
 				98BA27341B785EB00047549E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98BA27491B785EB00047549E /* SwinjectSimpleExampleTests.swift in Sources */,
+				9878A1EB1B78746C0005ACD9 /* WeatherFetcherSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
