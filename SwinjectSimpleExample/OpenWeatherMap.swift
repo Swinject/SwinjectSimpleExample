@@ -7,9 +7,10 @@
 //
 
 struct OpenWeatherMap {
-    // Replace with YOUR OWN KEY!
+    // Replace the empty string with YOUR OWN KEY!
+    // The key is available for free.
     // http://openweathermap.org
-    private static let apiKey = "a9ea5a246f8df80b43"
+    private static let apiKey = ""
     
     private static let cityIds = [
         6077243, 524901, 5368361, 1835848, 3128760, 4180439,
