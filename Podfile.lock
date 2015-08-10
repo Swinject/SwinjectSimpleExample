@@ -1,0 +1,35 @@
+PODS:
+  - Alamofire (1.3.0)
+  - Nimble (2.0.0-rc.2)
+  - Quick (0.5.1)
+  - SwiftyJSON (2.2.1)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, commit `1b7b1f1aa`)
+  - Nimble (= 2.0.0-rc.2)
+  - Quick (~> 0.5.0)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`, commit `45ca854ce`)
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :commit: 1b7b1f1aa
+    :git: https://github.com/Alamofire/Alamofire.git
+  SwiftyJSON:
+    :commit: 45ca854ce
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: 1b7b1f1aa
+    :git: https://github.com/Alamofire/Alamofire.git
+  SwiftyJSON:
+    :commit: 45ca854ce
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: e57db85401895fda01783b3b9bda5b32d9f347ff
+  Nimble: e3cf5e73a491daf21c2bc88783dbfc55ce8b8e02
+  Quick: 7426537a99e75076d6930c5b6da58006e4a9f38a
+  SwiftyJSON: ae2d0a3d68025d136602a33c4ee215091ced3e33
+
+COCOAPODS: 0.38.2
