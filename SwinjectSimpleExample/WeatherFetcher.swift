@@ -15,12 +15,12 @@ struct WeatherFetcher {
     
     func fetch(response: [City]? -> ()) {
         networking.request { data in
-            let cities = data.flatMap { self.decode($0) }
+            let cities = data.map { self.decode($0) }
             response(cities)
         }
     }
     
-    private func decode(data: NSData) -> [City]? {
+    private func decode(data: NSData) -> [City] {
         let json = JSON(data: data)
         var cities = [City]()
         for (_, j) in json["list"] {
