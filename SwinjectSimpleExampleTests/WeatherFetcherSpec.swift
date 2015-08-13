@@ -48,10 +48,14 @@ class WeatherFetcherSpec: QuickSpec {
         var container: Container!
         beforeEach {
             container = Container()
+            
+            // Registrations for the network using Alamofire.
             container.register(Networking.self) { _ in Network() }
             container.register(WeatherFetcher.self) { r in
                 WeatherFetcher(networking: r.resolve(Networking.self)!)
             }
+            
+            // Registration for the stub network.
             container.register(Networking.self, name: "stub") { _ in StubNetwork() }
             container.register(WeatherFetcher.self, name: "stub") { r in
                 WeatherFetcher(networking: r.resolve(Networking.self, name: "stub")!)
