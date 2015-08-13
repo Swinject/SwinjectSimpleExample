@@ -1,6 +1,6 @@
 # SwinjectSimpleExample
 
-This is an example project to demonstrate [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection) and [Swinject](https://github.com/Swinject/Swinject) in a simple weather app that lists weather information at some locations.
+This is an example project to demonstrate [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection) and [Swinject](https://github.com/Swinject/Swinject) in a simple weather app that lists current weather information at some locations.
 
 ![Screenshot](Assets/SwinjectSimpleExampleScreenshot.png)
 
