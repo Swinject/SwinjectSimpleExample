@@ -20,7 +20,8 @@ This is an example project to demonstrate [dependency injection](https://en.wiki
 
 The following blog post demonstrates step-by-step development of this project introducing dependency injection and Swinject.
 
-- [Dependency Injection Framework for Swift - Simple Weather App Example with Swinject Part 1/2](http://yoichitgy.github.io/post/dependency-injection-framework-for-swift-simple-weather-app-example-with-swinject-part-1/)
+- [Dependency Injection Framework for Swift - Simple Weather App Example with Swinject Part 1/2](https://yoichitgy.github.io/post/dependency-injection-framework-for-swift-simple-weather-app-example-with-swinject-part-1/)
+- [Dependency Injection Framework for Swift - Simple Weather App Example with Swinject Part 2/2](https://yoichitgy.github.io/post/dependency-injection-framework-for-swift-simple-weather-app-example-with-swinject-part-2/)
 
 ## License
 
