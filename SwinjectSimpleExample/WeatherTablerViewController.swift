@@ -17,6 +17,8 @@ class WeatherTablerViewController: UITableViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
         weatherFetcher?.fetch {
             if let cities = $0 {
                 self.cities = cities
