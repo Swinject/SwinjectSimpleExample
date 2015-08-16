@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func createContainer() -> Container {
         let container = Container()
-        container.registerForStoryboard(WeatherTablerViewController.self) { r, c in
+        container.registerForStoryboard(WeatherTableViewController.self) { r, c in
             c.weatherFetcher = r.resolve(WeatherFetcher.self)
         }
         container.register(Networking.self) { _ in Network() }

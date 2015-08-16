@@ -1,5 +1,5 @@
 //
-//  WeatherTablerViewController.swift
+//  WeatherTableViewController.swift
 //  SwinjectSimpleExample
 //
 //  Created by Yoichi Tagaya on 8/10/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeatherTablerViewController: UITableViewController {
+class WeatherTableViewController: UITableViewController {
     var weatherFetcher: WeatherFetcher?
     private var cities = [City]() {
         didSet {

@@ -1,5 +1,5 @@
 //
-//  WeatherTablerViewControllerSpec.swift
+//  WeatherTableViewControllerSpec.swift
 //  SwinjectSimpleExample
 //
 //  Created by Yoichi Tagaya on 8/10/15.
@@ -11,7 +11,7 @@ import Nimble
 import Swinject
 @testable import SwinjectSimpleExample
 
-class WeatherTablerViewControllerSpec: QuickSpec {
+class WeatherTableViewControllerSpec: QuickSpec {
     class MockNetwork: Networking {
         var requestCount = 0
         
@@ -29,8 +29,8 @@ class WeatherTablerViewControllerSpec: QuickSpec {
             container.register(WeatherFetcher.self) { r in
                 WeatherFetcher(networking: r.resolve(Networking.self)!)
             }
-            container.register(WeatherTablerViewController.self) { r in
-                let controller = WeatherTablerViewController()
+            container.register(WeatherTableViewController.self) { r in
+                let controller = WeatherTableViewController()
                 controller.weatherFetcher = r.resolve(WeatherFetcher.self)
                 return controller
             }
@@ -38,7 +38,7 @@ class WeatherTablerViewControllerSpec: QuickSpec {
         
         it("starts fetching weather information when the view is about appearing.") {
             let network = container.resolve(Networking.self) as! MockNetwork
-            let controller = container.resolve(WeatherTablerViewController.self)!
+            let controller = container.resolve(WeatherTableViewController.self)!
 
             expect(network.requestCount) == 0
             controller.viewWillAppear(true)

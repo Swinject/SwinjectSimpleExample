@@ -7,7 +7,7 @@
         <!--Weather Now-->
         <scene sceneID="2D7-jx-u5T">
             <objects>
-                <tableViewController id="ykF-tn-1bK" customClass="WeatherTablerViewController" customModule="SwinjectSimpleExample" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ykF-tn-1bK" customClass="WeatherTableViewController" customModule="SwinjectSimpleExample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="45C-dC-7GN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
