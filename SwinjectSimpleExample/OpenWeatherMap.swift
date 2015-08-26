@@ -22,7 +22,7 @@ struct OpenWeatherMap {
     static var parameters: [String: String] {
         return [
             "APPID": apiKey,
-            "id": ",".join(cityIds.map { String($0) })
+            "id": cityIds.map { String($0) }.joinWithSeparator(",")
         ]
     }
 }
