@@ -6,7 +6,7 @@ This is an example project to demonstrate [dependency injection](https://en.wiki
 
 ## Requirements
 
-- Xcode 7 beta 5
+- Xcode 7 beta 6
 - [CocoaPods](https://cocoapods.org) 0.38 or later
 
 ## Installation
