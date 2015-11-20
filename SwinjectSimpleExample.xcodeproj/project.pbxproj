@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D23A09513581907853700C6 /* Pods_SwinjectSimpleExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A29B4448E7E0D4B438261D /* Pods_SwinjectSimpleExampleTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8D23A09513581907853700C6 /* Pods_SwinjectSimpleExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A29B4448E7E0D4B438261D /* Pods_SwinjectSimpleExampleTests.framework */; };
 		9878A1E71B78745C0005ACD9 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878A1E51B78745C0005ACD9 /* City.swift */; };
 		9878A1E81B78745C0005ACD9 /* WeatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878A1E61B78745C0005ACD9 /* WeatherFetcher.swift */; };
 		9878A1EB1B78746C0005ACD9 /* WeatherFetcherSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878A1EA1B78746C0005ACD9 /* WeatherFetcherSpec.swift */; };
@@ -20,7 +20,7 @@
 		98BA27391B785EB00047549E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BA27371B785EB00047549E /* Main.storyboard */; };
 		98BA273B1B785EB00047549E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98BA273A1B785EB00047549E /* Assets.xcassets */; };
 		98BA273E1B785EB00047549E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BA273C1B785EB00047549E /* LaunchScreen.storyboard */; };
-		B97E303F9E4F93462892FD8E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC9D028BA563C5ADB6DE2EE /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B97E303F9E4F93462892FD8E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC9D028BA563C5ADB6DE2EE /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
