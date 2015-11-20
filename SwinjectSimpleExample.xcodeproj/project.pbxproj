@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D23A09513581907853700C6 /* Pods_SwinjectSimpleExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A29B4448E7E0D4B438261D /* Pods_SwinjectSimpleExampleTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8D23A09513581907853700C6 /* Pods_SwinjectSimpleExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7A29B4448E7E0D4B438261D /* Pods_SwinjectSimpleExampleTests.framework */; };
+		981107861BFED52800B861E1 /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981107851BFED52700B861E1 /* SwinjectStoryboard+Setup.swift */; };
 		9878A1E71B78745C0005ACD9 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878A1E51B78745C0005ACD9 /* City.swift */; };
 		9878A1E81B78745C0005ACD9 /* WeatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878A1E61B78745C0005ACD9 /* WeatherFetcher.swift */; };
 		9878A1EB1B78746C0005ACD9 /* WeatherFetcherSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878A1EA1B78746C0005ACD9 /* WeatherFetcherSpec.swift */; };
@@ -20,7 +21,7 @@
 		98BA27391B785EB00047549E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BA27371B785EB00047549E /* Main.storyboard */; };
 		98BA273B1B785EB00047549E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98BA273A1B785EB00047549E /* Assets.xcassets */; };
 		98BA273E1B785EB00047549E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BA273C1B785EB00047549E /* LaunchScreen.storyboard */; };
-		B97E303F9E4F93462892FD8E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC9D028BA563C5ADB6DE2EE /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B97E303F9E4F93462892FD8E /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC9D028BA563C5ADB6DE2EE /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		94B7082C6BE00078D95CAB7A /* Pods-SwinjectSimpleExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwinjectSimpleExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwinjectSimpleExampleTests/Pods-SwinjectSimpleExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		981107851BFED52700B861E1 /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
 		9878A1E51B78745C0005ACD9 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		9878A1E61B78745C0005ACD9 /* WeatherFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherFetcher.swift; sourceTree = "<group>"; };
 		9878A1EA1B78746C0005ACD9 /* WeatherFetcherSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherFetcherSpec.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			children = (
 				9878A1E41B7874420005ACD9 /* Model */,
 				98BA27331B785EB00047549E /* AppDelegate.swift */,
+				981107851BFED52700B861E1 /* SwinjectStoryboard+Setup.swift */,
 				9878A1F21B78B9610005ACD9 /* WeatherTableViewController.swift */,
 				98BA27371B785EB00047549E /* Main.storyboard */,
 				98BA273A1B785EB00047549E /* Assets.xcassets */,
@@ -366,6 +369,7 @@
 				9878A1EF1B78930E0005ACD9 /* Networking.swift in Sources */,
 				9878A1F31B78B9610005ACD9 /* WeatherTableViewController.swift in Sources */,
 				9878A1E71B78745C0005ACD9 /* City.swift in Sources */,
+				981107861BFED52800B861E1 /* SwinjectStoryboard+Setup.swift in Sources */,
 				9878A1F11B7893210005ACD9 /* Network.swift in Sources */,
 				98BA27341B785EB00047549E /* AppDelegate.swift in Sources */,
 			);
