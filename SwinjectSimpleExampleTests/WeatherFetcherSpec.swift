@@ -14,7 +14,7 @@ import Swinject
 
 class WeatherFetcherSpec: QuickSpec {
     struct StubNetwork: Networking {    
-        private static let json =
+        fileprivate static let json =
         "{" +
             "\"list\": [" +
                 "{" +
@@ -38,8 +38,8 @@ class WeatherFetcherSpec: QuickSpec {
             "]" +
         "}"
         
-        func request(response: NSData? -> ()) {
-            let data = StubNetwork.json.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
+        func request(_ response: @escaping (Data?) -> ()) {
+            let data = StubNetwork.json.data(using: String.Encoding.utf8, allowLossyConversion: false)
             response(data)
         }
     }

@@ -10,13 +10,13 @@ import UIKit
 
 class WeatherTableViewController: UITableViewController {
     var weatherFetcher: WeatherFetcher?
-    private var cities = [City]() {
+    fileprivate var cities = [City]() {
         didSet {
             tableView.reloadData()
         }
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         weatherFetcher?.fetch {
@@ -27,22 +27,22 @@ class WeatherTableViewController: UITableViewController {
                 let title = "Error"
                 let message = "Cannot communicate with the weather server. Check wi-fi or cellular network settings."
                 let dismiss = "Dismiss"
-                let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-                alert.addAction(UIAlertAction(title: dismiss, style: .Default) { _ in
-                    alert.dismissViewControllerAnimated(true, completion: nil)
+                let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: dismiss, style: .default) { _ in
+                    alert.dismiss(animated: true, completion: nil)
                 })
-                self.presentViewController(alert, animated: true, completion: nil)
+                self.present(alert, animated: true, completion: nil)
             }
         }
     }
     
     // MARK: UITableViewDataSource
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cities.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let city = cities[indexPath.row]
         cell.textLabel?.text = city.name
         cell.detailTextLabel?.text = city.weather

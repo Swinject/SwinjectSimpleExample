@@ -15,8 +15,8 @@ class WeatherTableViewControllerSpec: QuickSpec {
     class MockNetwork: Networking {
         var requestCount = 0
         
-        func request(response: NSData? -> ()) {
-            requestCount++
+        func request(_ response: @escaping (Data?) -> ()) {
+            requestCount += 1
         }
     }
     
@@ -25,7 +25,7 @@ class WeatherTableViewControllerSpec: QuickSpec {
         beforeEach {
             container = Container()
             container.register(Networking.self) { _ in MockNetwork() }
-                .inObjectScope(.Container)
+                .inObjectScope(.container)
             container.register(WeatherFetcher.self) { r in
                 WeatherFetcher(networking: r.resolve(Networking.self)!)
             }

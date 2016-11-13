@@ -10,10 +10,9 @@ import Foundation
 import Alamofire
 
 struct Network : Networking {
-    func request(response: NSData? -> ()) {
-        Alamofire.request(.GET, OpenWeatherMap.url, parameters: OpenWeatherMap.parameters)
-            .response { _, _, data, _ in
-                response(data)
-            }
+    func request(_ networkResponse: @escaping (Data?) -> ()) {
+        Alamofire.request(OpenWeatherMap.url, parameters: OpenWeatherMap.parameters).responseData { (dataResponse) in
+            networkResponse(dataResponse.data)
+        }
     }
 }

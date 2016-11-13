@@ -9,5 +9,5 @@
 import Foundation
 
 protocol Networking {
-    func request(response: NSData? -> ())
+    func request(_ response: @escaping (Data?) -> ())
 }

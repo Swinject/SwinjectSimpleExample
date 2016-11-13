@@ -11,7 +11,7 @@ struct OpenWeatherMap {
     // The key is available for free.
     // http://openweathermap.org
     private static let apiKey = ""
-    
+
     private static let cityIds = [
         6077243, 524901, 5368361, 1835848, 3128760, 4180439,
         2147714, 264371, 1816670, 2643743, 3451190, 1850147
@@ -22,7 +22,7 @@ struct OpenWeatherMap {
     static var parameters: [String: String] {
         return [
             "APPID": apiKey,
-            "id": cityIds.map { String($0) }.joinWithSeparator(",")
+            "id": cityIds.map { String($0) }.joined(separator: ",")
         ]
     }
 }
