@@ -1,24 +1,28 @@
 PODS:
-  - Alamofire (3.1.2)
-  - Nimble (3.0.0)
-  - Quick (0.8.0)
-  - SwiftyJSON (2.3.0)
-  - Swinject (0.5)
+  - Alamofire (4.0.1)
+  - Nimble (5.0.0)
+  - Quick (0.10.0)
+  - SwiftyJSON (3.1.1)
+  - Swinject (2.0.0-beta.2)
+  - SwinjectStoryboard (1.0.0-beta.2):
+    - Swinject (= 2.0.0-beta.2)
 
 DEPENDENCIES:
-  - Alamofire (~> 3.1.0)
-  - Nimble (= 3.0.0)
-  - Quick (= 0.8.0)
-  - SwiftyJSON (~> 2.3.0)
-  - Swinject (= 0.5)
+  - Alamofire (~> 4.0)
+  - Nimble (= 5.0)
+  - Quick (= 0.10)
+  - SwiftyJSON (~> 3.1)
+  - Swinject (= 2.0.0-beta.2)
+  - SwinjectStoryboard (= 1.0.0-beta.2)
 
 SPEC CHECKSUMS:
-  Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
-  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
-  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
-  SwiftyJSON: 8d6b61a70277ef2a5d710d372e06e7e2d87fb9e4
-  Swinject: 0bf92c3336808a69d162bcf8f338774640de518a
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Nimble: 56fc9f5020effa2206de22c3dd910f4fb011b92f
+  Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+  Swinject: 69a893192efa9f2cc44be79ef423d04d571b6af9
+  SwinjectStoryboard: b52b45821a50386ef604c3cd098f8029a50a268d
 
-PODFILE CHECKSUM: 9df9ec5a8f8f2dbfc93d9bc8d6377d834fd385d8
+PODFILE CHECKSUM: 10288fb3b26677fe16a777a1c9fad530301d305d
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1
