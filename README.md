@@ -6,8 +6,10 @@ This is an example project to demonstrate [dependency injection](https://en.wiki
 
 ## Requirements
 
-- Xcode 8 or later
+- Xcode 8 or later with Swift 3.0.x
 - [CocoaPods](https://cocoapods.org) 1.1.0 or later
+
+_(Xcode 7 version with Swift 2.2 is [here](https://github.com/Swinject/SwinjectSimpleExample/tree/swinject-v1))_
 
 ## Setup
 
