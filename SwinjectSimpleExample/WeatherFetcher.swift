@@ -13,14 +13,14 @@ import SwiftyJSON
 struct WeatherFetcher {
     let networking: Networking
     
-    func fetch(response: [City]? -> ()) {
+    func fetch(_ response: @escaping ([City]?) -> ()) {
         networking.request { data in
-            let cities = data.map { self.decode($0) }
+            let cities = data.map { self.decode($0 as Data) }
             response(cities)
         }
     }
     
-    private func decode(data: NSData) -> [City] {
+    fileprivate func decode(_ data: Data) -> [City] {
         let json = JSON(data: data)
         var cities = [City]()
         for (_, j) in json["list"] {
