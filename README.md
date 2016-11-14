@@ -6,8 +6,8 @@ This is an example project to demonstrate [dependency injection](https://en.wiki
 
 ## Requirements
 
-- Xcode 7
-- [CocoaPods](https://cocoapods.org) 0.38 or later
+- Xcode 8 or later
+- [CocoaPods](https://cocoapods.org) 1.1.0 or later
 
 ## Setup
 
