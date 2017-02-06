@@ -10,7 +10,7 @@ import SwinjectStoryboard
 
 extension SwinjectStoryboard {
     class func setup() {
-        defaultContainer.registerForStoryboard(WeatherTableViewController.self) { r, c in
+        defaultContainer.storyboardInitCompleted(WeatherTableViewController.self) { r, c in
             c.weatherFetcher = r.resolve(WeatherFetcher.self)
         }
         defaultContainer.register(Networking.self) { _ in Network() }

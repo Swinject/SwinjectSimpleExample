@@ -3,8 +3,8 @@ platform :ios, '9.0'
 use_frameworks!
 
 def swinject_pods
-    pod 'Swinject', '2.0.0-beta.2'
-    pod 'SwinjectStoryboard', '1.0.0-beta.2'
+    pod 'Swinject', '2.0.0'
+    pod 'SwinjectStoryboard', '1.0.0'
 end
 
 target :SwinjectSimpleExample do
